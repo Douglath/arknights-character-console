@@ -2,9 +2,12 @@
 Version 1.0.0 — 2026-10-03
 
 本项目为《明日方舟》同人二次创作与 AI 辅助生成角色资源分享，
-仅供非商业交流、展示及 ASSET-USAGE.md 允许的使用。
+包内模型资源采用 CC BY-NC 4.0（署名—非商业性使用 4.0 国际）。
+仅限非商业的个人学习和二创使用。
+用途说明不为标准 CC 许可另设附加限制，实际条件以许可全文为准。
 本项目为非官方项目，与鹰角网络及联动版权方无隶属或背书关系。
 
+角色版权归鹰角网络；联动角色归各自版权方。
 《明日方舟》及其角色、名称、美术设定、商标等相关权利归
 上海鹰角网络科技有限公司（Hypergryph）及相关权利人所有。
 联动角色和相关名称、设计、商标归各自版权方所有。
@@ -17,8 +20,9 @@ Version 1.0.0 — 2026-10-03
 分享者：Douglath
 项目：https://github.com/Douglath/arknights-character-console
 原创控制台代码：LICENSE（MIT，限定范围）。
-生成角色资源：ASSET-USAGE.md（署名、非商业、允许修改和再分享，
-仅限分享者确有权许可的贡献）。
+生成角色资源：CC BY-NC 4.0，仅限分享者确有权许可的贡献。
+范围与署名：ASSET-USAGE.md；全文：LICENSES/CC-BY-NC-4.0.txt。
+许可链接：https://creativecommons.org/licenses/by-nc/4.0/
 第三方库和字体：THIRD_PARTY_NOTICES.md 及各自许可。
 
 Fan-made and unofficial. Arknights and crossover IP belong to their respective

@@ -13,8 +13,8 @@
     },
     {
       "path": "ASSET-USAGE.md",
-      "bytes": 2954,
-      "sha256": "47965e12fd715ade1423cb0579062d3144b407c5bd234ac899a97f435e4a8b05"
+      "bytes": 2713,
+      "sha256": "59965a1e1c7d00091b5915d49a373976f16798c60d6e81dae3830f1b9871b8a3"
     },
     {
       "path": "LICENSE",
@@ -22,14 +22,19 @@
       "sha256": "682ac04b43ee03111ef65877e403e1ede3c5415cb9ed7977861bfbb29e970556"
     },
     {
+      "path": "LICENSES/CC-BY-NC-4.0.txt",
+      "bytes": 19347,
+      "sha256": "41003d4a74749c0220e33dd415042164b5a1093ed401f36277234f772d22d3d0"
+    },
+    {
       "path": "NOTICE",
-      "bytes": 1376,
-      "sha256": "db159e0392052f5414affc0e9c659c9da0027937cb9f3abae7ce168e943bb3bd"
+      "bytes": 1709,
+      "sha256": "e5a87453ef204483bb2bcaa2755a258dea301c7df01930c1bf1b6170cd217469"
     },
     {
       "path": "README.md",
-      "bytes": 4147,
-      "sha256": "a297d8ce4b66da58ece420feed4f21c31b032a3c849ad06fff9021b730e83478"
+      "bytes": 4258,
+      "sha256": "a388d29b4791ae13a1a7de08ce0c2edc3d451c3bf4e1b7858b2a390156ba058e"
     },
     {
       "path": "Start-Console.cmd",
@@ -53,23 +58,23 @@
     },
     {
       "path": "docs/provenance.md",
-      "bytes": 1409,
-      "sha256": "1caf559865a3005c61e7a8aec94f6b55220c364822b3345d3b83c98c68bdde16"
+      "bytes": 1442,
+      "sha256": "d7794565f992cd27a8280c0b0e40b1d4f5adda5f4abf313a388649c5bdf1daea"
     },
     {
       "path": "docs/usage.md",
-      "bytes": 1303,
-      "sha256": "e03fdc2964ef45e358d02385cfdc064c353fe4b71aea1085eca9b814f5a897b8"
+      "bytes": 1382,
+      "sha256": "b8d59ae65f3744f646ae60ff47a7f91fe660ea47a88b3cbe8f01e87031dc6776"
     },
     {
       "path": "docs/validation.md",
-      "bytes": 1910,
-      "sha256": "aa158725bbb953bc41999970e39f5c1baea0d3dac5ea099ce8fd945426a6fd67"
+      "bytes": 1961,
+      "sha256": "aa91a7f00293b8f2bfd85504601302fc6a9300803d06e40b54222255b40e0018"
     },
     {
       "path": "manifests/models.json",
-      "bytes": 198970,
-      "sha256": "72505999c8b8923a3163ea98015fed6550b56f136ecc3a454cdce2502dfa1b8b"
+      "bytes": 199005,
+      "sha256": "5fa7a6f351c1dfa8c5a31bc576c718e7e47dbab93126a6b9b03af80bde184b73"
     },
     {
       "path": "roster/assets/fonts/bebas-neue/LICENSE",
@@ -3393,13 +3398,13 @@
     },
     {
       "path": "roster/site/export.mjs",
-      "bytes": 8070,
-      "sha256": "c5e0fb444b82d382f5d2f2d53b092932cdf63dbf5294ae9f917ceb1b18200ddd"
+      "bytes": 8150,
+      "sha256": "a32b83c22caf1348724ccfb39b5d7586577e42498ac9f341afb4ed861320905d"
     },
     {
       "path": "roster/site/index.html",
-      "bytes": 5573,
-      "sha256": "9dd3883fd92159e831f14a81d7b301db42973d2c17ad777d202420fb461cd574"
+      "bytes": 5569,
+      "sha256": "009aafb940d5e9af6902843a35ae0e4603732d90386205268af20ef760f13092"
     },
     {
       "path": "showoff/models/00694589ee30ed976b517d6e_0.glb",
@@ -5558,8 +5563,8 @@
     },
     {
       "path": "tools/package.py",
-      "bytes": 3642,
-      "sha256": "e865c599f787a7cecb41bac0f2c61cbc824dc0036898be1e82cce94ba2eb6ae2"
+      "bytes": 3737,
+      "sha256": "3afbe1e21c583d6dca6323783a689b5a12f6a44c694a310b545b9ed13d705e7c"
     },
     {
       "path": "tools/verify.py",
@@ -5568,8 +5573,8 @@
     },
     {
       "path": "version.json",
-      "bytes": 300,
-      "sha256": "928b4312f1969601f7ffd207e82202a99462682934b738ed81284204dd7657b7"
+      "bytes": 335,
+      "sha256": "429402221089671b29305c4579762ca11845d09df65aac6bd16b7a0f4edaa635"
     }
   ]
 }

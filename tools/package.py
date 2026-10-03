@@ -11,7 +11,7 @@ from verify import ROOT, safe_path, sha256, verify
 FILES = ('LICENSE', 'NOTICE', 'ASSET-USAGE.md', 'THIRD_PARTY_NOTICES.md', 'README.md',
          'Start-Console.cmd', 'Start-Console.sh', 'version.json', '.gitignore',
          '.gitattributes', 'manifests/models.json')
-DIRECTORIES = ('docs', 'tools', 'roster', 'showoff/models', 'showoff/runtime-modules/vendor')
+DIRECTORIES = ('LICENSES', 'docs', 'tools', 'roster', 'showoff/models', 'showoff/runtime-modules/vendor')
 EXCLUDED_PARTS = {'.git', '__pycache__', '.pytest_cache', 'node_modules', 'test-results',
                   'playwright-report', 'coverage', 'test-output', 'test-outputs', '.venv'}
 EXCLUDED_SUFFIXES = {'.pyc', '.pyo', '.zip', '.log', '.tmp', '.bak'}

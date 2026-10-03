@@ -6,5 +6,6 @@
   "forms": 423,
   "persons": 385,
   "runtime": "Python 3.10+; WebGL 2 browser",
-  "repository": "https://github.com/Douglath/arknights-character-console"
+  "repository": "https://github.com/Douglath/arknights-character-console",
+  "modelLicense": "CC-BY-NC-4.0"
 }

@@ -27,6 +27,7 @@ export async function standaloneHTML(r,meta){
  const licensePaths={
   '原创代码 MIT':'../LICENSE',
   '角色资源使用条款':'../ASSET-USAGE.md',
+  'CC BY-NC 4.0 完整许可':'../LICENSES/CC-BY-NC-4.0.txt',
   '版权声明':'../NOTICE',
   'Three.js MIT':'../showoff/runtime-modules/vendor/three/LICENSE',
  };
@@ -59,7 +60,7 @@ export async function standaloneHTML(r,meta){
 <div class="info"><div class="code">${esc(info.code)}<span class="stars">${'★'.repeat(info.rarity)}</span></div>
 <h1>${esc(info.name)}<small>${esc(info.en.toUpperCase())}</small></h1><div class="prof">${esc(info.prof)}</div>
 <div class="chips">${info.factions.map(f=>`<span>${esc(f)}</span>`).join('')}${info.ip?`<span>${esc(info.ip)}</span>`:''}</div>
-<div>${esc(info.usage)}</div><div class="meta">MODEL ${esc(info.model)} · FORM ${esc(info.form)} · ASSET ${esc(info.key)}<br>同人模型资源：Douglath / arknights-character-console<br>非官方 · 署名 / 非商业 · 角色与联动 IP 归各自权利人</div></div>
+<div>${esc(info.usage)}</div><div class="meta">MODEL ${esc(info.model)} · FORM ${esc(info.form)} · ASSET ${esc(info.key)}<br>同人模型资源：Douglath / arknights-character-console<br>非官方 · CC BY-NC 4.0 · 角色版权归鹰角网络；联动角色归各自版权方</div></div>
 <details class="licenses"><summary>使用条款与完整许可</summary>${licenseHTML}</details>
 <script type="module">
 import {GLTFLoader} from 'pg/app/vendor/three/examples/jsm/loaders/GLTFLoader.js';
