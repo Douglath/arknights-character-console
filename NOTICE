@@ -1,0 +1,25 @@
+明日方舟同人角色控制台 / Arknights Fan Character Console
+Version 1.0.0 — 2026-10-03
+
+本项目为《明日方舟》同人二次创作与 AI 辅助生成角色资源分享，
+仅供非商业交流、展示及 ASSET-USAGE.md 允许的使用。
+本项目为非官方项目，与鹰角网络及联动版权方无隶属或背书关系。
+
+《明日方舟》及其角色、名称、美术设定、商标等相关权利归
+上海鹰角网络科技有限公司（Hypergryph）及相关权利人所有。
+联动角色和相关名称、设计、商标归各自版权方所有。
+
+当前索引包含以下联动/合作分组，仅用于说明数据范围：
+彩虹六号：围攻、怪物猎人、女神异闻录3 Reload、迷宫饭、
+九色鹿、BanG Dream! Ave Mujica、万类共生（公益合作）。
+该列表不是授权证明，也不主张分享者拥有这些原 IP。
+
+分享者：Douglath
+项目：https://github.com/Douglath/arknights-character-console
+原创控制台代码：LICENSE（MIT，限定范围）。
+生成角色资源：ASSET-USAGE.md（署名、非商业、允许修改和再分享，
+仅限分享者确有权许可的贡献）。
+第三方库和字体：THIRD_PARTY_NOTICES.md 及各自许可。
+
+Fan-made and unofficial. Arknights and crossover IP belong to their respective
+rights holders. No endorsement or third-party IP license is implied.

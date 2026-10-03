@@ -1,0 +1,10 @@
+{
+  "version": "1.0.0",
+  "releaseDate": "2026-10-03",
+  "sourceCommit": "c612899a0493916d78ff32993647bd3a91066023",
+  "models": 426,
+  "forms": 423,
+  "persons": 385,
+  "runtime": "Python 3.10+; WebGL 2 browser",
+  "repository": "https://github.com/Douglath/arknights-character-console"
+}

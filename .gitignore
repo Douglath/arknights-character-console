@@ -1,0 +1,7 @@
+showoff/models/*.glb
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+.cache/
+test-results/

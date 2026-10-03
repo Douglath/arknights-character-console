@@ -1,0 +1,19 @@
+@import url('../assets/fonts/fonts.css');
+/* PRTS archive design tokens, shared by the archive site and the PV player. */
+:root{
+ --bg:#0e0f11;--bg2:#15171a;--panel:#1a1c20;--panel2:#202328;
+ --line:rgba(255,255,255,.11);--line2:rgba(255,255,255,.22);
+ --text:#ecebe6;--mute:#8d9096;--dim:#5b5f66;
+ --accent:#ffd400;--accent-ink:#141414;--cyan:#27c0e6;--warn:#ff5b3a;
+ --r6:#ff9b21;--r5:#ffd23f;--r4:#c9a7ff;--r3:#4fc8ff;--r2:#c6e27a;--r1:#d0d0d0;
+ --f-sans:'Noto Sans SC Variable','Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif;
+ --f-serif:'Noto Serif SC Variable','Noto Serif SC',serif;
+ --f-display:'Oswald Variable','Bebas Neue','Noto Sans SC Variable',sans-serif;
+ --f-impact:'Bebas Neue','Oswald Variable',sans-serif;
+ --f-data:'Chakra Petch','Oswald Variable',monospace;
+ --f-gothic:'Cinzel Variable','Noto Serif SC Variable',serif;
+ --chamfer:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px));
+}
+.glyph{width:1em;height:1em;display:inline-block;vertical-align:-.12em}
+.hatch{background:repeating-linear-gradient(-45deg,var(--accent) 0 6px,transparent 6px 12px)}
+.ticks{background:repeating-linear-gradient(90deg,var(--line2) 0 1px,transparent 1px 8px) bottom/100% 5px no-repeat}

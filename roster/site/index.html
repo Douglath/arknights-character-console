@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>干员档案 · PRTS Archive</title>
+<link rel="stylesheet" href="../shared/theme.css">
+<link rel="stylesheet" href="archive.css">
+<script type="importmap">{"imports":{"pg/app/":"../../showoff/runtime-modules/"}}</script>
+</head>
+<body>
+<div class="bg-grid" aria-hidden="true"></div>
+<header class="topbar">
+ <a class="brand" href="#" data-view="dossier">
+  <span class="brand-mark" aria-hidden="true"><i></i><i></i></span>
+  <span class="brand-text"><b>PRTS</b><small>OPERATOR ARCHIVE · 干员档案</small></span>
+ </a>
+ <nav class="views" aria-label="视图">
+  <button data-view="dossier"><b>档案</b><small>DOSSIER</small></button>
+  <button data-view="index"><b>名录</b><small>INDEX</small></button>
+  <button data-view="panorama"><b>全景</b><small>PANORAMA</small></button>
+  <a href="../../ASSET-USAGE.md" target="_blank" rel="noopener"><b>使用条款</b><small>FAN-MADE · 非官方</small></a>
+ </nav>
+ <div class="stats" id="stats"></div>
+</header>
+
+<div class="layout">
+ <aside class="filters" id="filters" aria-label="筛选">
+  <button class="ghost filter-close" id="filterClose">完成 · 关闭筛选</button>
+  <div class="search"><input id="search" type="search" placeholder="搜索 名称 / 代号 / 编号 / 阵营" autocomplete="off"><span class="kbd">/</span></div>
+  <div id="facetRoot"></div>
+  <div class="filter-foot">
+   <button id="reset" class="ghost">重置筛选 RESET</button>
+   <p class="note">模型条目按 assetKey 计；同一人物的异格/版本分开计数，不合并。</p><p class="note">非官方同人资源 · 署名/非商业<br><a href="../../NOTICE" target="_blank">版权声明</a> · <a href="../../THIRD_PARTY_NOTICES.md" target="_blank">第三方许可</a></p>
+  </div>
+ </aside>
+
+ <main id="main">
+  <div class="resultbar">
+   <div class="active" id="activeTags"></div>
+   <div class="result-count"><b id="resultCount">0</b><span>/ <span id="totalCount">0</span> 模型条目</span></div>
+   <label class="sort">排序 <select id="sort">
+    <option value="rarity">星级</option><option value="prof">职业</option><option value="code">编号</option><option value="name">名称</option><option value="chapter">篇章</option>
+   </select></label>
+   <button class="ghost filter-toggle" id="filterToggle">筛选</button>
+  </div>
+
+  <section class="view view-dossier" data-panel="dossier">
+   <div class="roster" id="roster" role="listbox" aria-label="干员列表"></div>
+   <article class="dossier" id="dossier" aria-live="polite">
+    <div class="ds-bgname" id="dsBgName" aria-hidden="true"></div>
+    <div class="ds-stripes" aria-hidden="true"></div>
+    <canvas id="stage"></canvas>
+    <div class="ds-hud" aria-hidden="true"><span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span><span class="hud-line" id="hudLine"></span></div>
+    <div class="ds-info">
+     <div class="ds-code"><span id="dsCode"></span><span id="dsStars" class="stars"></span></div>
+     <h1 class="ds-name"><span id="dsName"></span><small id="dsNameEn"></small></h1>
+     <div class="ds-prof" id="dsProf"></div>
+     <div class="ds-chips" id="dsChips"></div>
+     <p class="ds-usage" id="dsUsage"></p>
+     <p class="ds-desc" id="dsDesc"></p>
+     <div class="ds-meta" id="dsMeta"></div>
+     <div class="ds-related" id="dsRelated"></div>
+    </div>
+    <div class="ds-tools" id="dsTools" role="toolbar" aria-label="模型预览">
+     <div class="tool-group"><span class="tool-lbl">MOTION</span>
+      <button data-motion="idle" class="on">待机</button><button data-motion="run">跑动</button><button data-motion="rig">测试动作</button><button id="toggleBones" aria-pressed="false">骨骼</button></div>
+     <div class="tool-group"><span class="tool-lbl">EXPORT</span>
+      <button id="dlGlb" title="下载该模型条目的原始 GLB：网格、骨骼与内置动画">⤓ GLB</button><button id="dlHtml" title="单个角色的离线展示页：内嵌模型与 Three.js，可切换动作与骨骼">⤓ 单体 HTML</button></div>
+     <div class="tool-note" id="motionNote"></div>
+    </div>
+    <div class="ds-nav">
+     <button id="prevOp" aria-label="上一位">◀</button><span id="dsIndex"></span><button id="nextOp" aria-label="下一位">▶</button>
+    </div>
+   </article>
+  </section>
+
+  <section class="view view-index" data-panel="index">
+   <table class="index-table" id="indexTable">
+    <thead><tr>
+     <th data-sort="code">编号</th><th></th><th data-sort="name">干员</th><th data-sort="rarity">星级</th><th data-sort="prof">职业</th>
+     <th>地区 / 组织</th><th data-sort="chapter">主题分组</th><th>模型条目</th>
+    </tr></thead>
+    <tbody></tbody>
+   </table>
+  </section>
+
+  <section class="view view-panorama" data-panel="panorama">
+   <div class="pano-head">
+    <div class="pano-count"><b id="panoCount">0</b><span>MODELS ON FILE</span></div>
+    <label class="sort">分组 <select id="groupBy">
+     <option value="chapter">主题分组</option><option value="prof">职业</option><option value="rarity">星级</option><option value="region">地区</option>
+    </select></label>
+   </div>
+   <div id="pano"></div>
+  </section>
+ </main>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script type="module" src="archive.mjs"></script>
+</body>
+</html>
